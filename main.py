@@ -1,0 +1,8 @@
+threepointers = input("How many threepointers did James Harden make? ")
+threepointers = int(threepointers)
+twopointers = input("How many twopointers did James Harden make? ")
+twopointers = int(twopointers)
+threepointscore = (threepointers * 3)
+twopointscore = (twopointers * 2)
+points = (threepointscore + twopointscore)
+print("James Harden scored " + str(points) + " points.")
