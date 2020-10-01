@@ -1,10 +1,19 @@
-threepointers = input("How many threepointers did James Harden make? ")
-threepointers = int(threepointers)
-twopointers = input("How many twopointers did James Harden make? ")
-twopointers = int(twopointers)
-freethrows = input("How many freethrows did James Harden make? ")
-freethrows = int(freethrows)
-threepointscore = (threepointers * 3)
-twopointscore = (twopointers * 2)
-points = (threepointscore + twopointscore + freethrows)
-print("James Harden scored " + str(points) + " points.")
+def f1(a):
+  if a < 0:
+    return -a
+  return a 
+
+def f2(n):
+  total = 0
+  while n > 0:
+    num = int(input("Enter an integer: "))
+    total = total + f1(num)
+    n = n - 1
+  return total
+
+def run():
+  n = int(input("Enter an integer: "))
+  print(f"answer is {f2(n)}")
+
+if __name__ == "__main__":
+  run()
